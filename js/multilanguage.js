@@ -1,10 +1,10 @@
 import translations from "./translations.js";
 
-const languageSelector = document.querySelector("select");
-languageSelector.addEventListener("change", (event) => {
-  setLanguage(event.target.value);
-  localStorage.setItem("lang", event.target.value);
-});
+// const languageSelector = document.querySelector("select");
+// languageSelector.addEventListener("change", (event) => {
+//   setLanguage(event.target.value);
+//   localStorage.setItem("lang", event.target.value);
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
   var language = localStorage.getItem("lang") || "en"; // اذا لم تكن اللغة متوفرة استخدم الانجليزية
